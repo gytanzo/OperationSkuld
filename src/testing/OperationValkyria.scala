@@ -1,5 +1,5 @@
 package testing
 
 object OperationValkyria {
-  def (testCase:)
+  def (testCase: Double)
 }
