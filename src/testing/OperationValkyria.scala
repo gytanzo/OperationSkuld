@@ -1,5 +1,7 @@
 package testing
 
 object OperationValkyria {
-  def (testCase:)
+  def testCase(KappaPride : String): String = {
+    "EZCLAP"
+  }
 }
