@@ -1,5 +1,0 @@
-package ServerNetworking
-
-class Token {
-
-}
