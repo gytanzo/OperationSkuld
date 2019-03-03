@@ -42,8 +42,24 @@ def set_username(string):
 set_username("Gytanzo")
 
 
+def setup_list_of_actions():
+    global listOfActions
+    listOfActions = []
+
+
 def send_key(button):
     win32api.keybd_event(keymap[button], 0, 0, 0)
     time.sleep(keyDelay)
     win32api.keybd_event(keymap[button], 0, win32con.KEYEVENTF_KEYUP, 0)
-    print(BackEnd.ChatUpdate.pp(username, button))
+    message = BackEnd.ChatUpdate.pp(username, button)
+    listOfActions.append(message)
+
+
+def append_actions():
+    contents = listOfActions
+    with open("Actions.txt", 'a') as f:
+        for item in contents:
+            f.write(item+'\n')
+
+
+append_actions()
