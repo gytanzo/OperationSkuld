@@ -3,18 +3,12 @@ from bottle import get, post, request, route, static_file, run, error
 
 @route('/')
 def server():
-    return static_file("page.html", root = "/FrontEnd")
+    return static_file("page.html", root = "")
 
-#@post('/join')
-#def users():
-#body for usernames
-#ex:def do_login():
-    #username = request.forms.get('username')
-    #password = request.forms.get('password')
-    #if check_login(username, password):
-     #else:
-        #return "<p>Login failed.</p>"
-#   return user #and add it the game
+@post('/join')
+def addusers():
+    new_user = request.forms.get(input)
+    return username
 
 #@post('/leave')
 #def rageQuit():
@@ -23,8 +17,8 @@ def server():
 
 #get
 
-@error(404)
-def error404(error):
+#@error(404)
+#def error404(error):
     return "I like women with BIG personalities."
 
 
