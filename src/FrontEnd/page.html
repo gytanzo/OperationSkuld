@@ -10,18 +10,18 @@
         border: none;
         color: white;
         width: 32px;
-        padding: 40px 32px;
+        padding: 40px 40px;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
     }
-    .lbutton {
+    .button1 {
          background-color: #4CAF50; /* Green */
          border: none;
          color: white;
          width: 32px;
-         padding: 40px 32px;
+         padding: 40px 100px;
          text-align: center;
          text-decoration: none;
          display: inline-block;
@@ -30,41 +30,53 @@
     div1.fixed {
         position: fixed;
         bottom: 110px;
-        left: 1000px;
-        width: 600px;
+        right: 420px;
+        width: 228px;
         border: 3px solid #73AD21;
     }
     div2.fixed {
         position: fixed;
         bottom: 220px;
-        left: 0;
-        width: 600px;
+        right: 0;
         border: 3px solid #73AD21;
     }
     div3.fixed {
         position: fixed;
         bottom: 110px;
-        left: 0;
-        width: 600px;
+        right: 0;
+        width: 344px;
         border: 3px solid #73AD21;
     }
 
     div4.fixed {
         position: fixed;
         bottom: 0;
-        left: 0px;
-        width: 600px;
+        right: 0px;
+        width: 468px;
         border: 3px solid #73AD21;
+    }
+    div5.fixed {
+        position: fixed;
+        bottom: 220px;
+        right: 420px;
+        width: 228px;
+        border: 3px solid #73AD21;
+    }
+    h3.fixed {
+        position: fixed;
+        bottom: 310px;
+        right: 440px;
+        font-size: 30px;
     }
 </style>
 <body>
-<h3>
-    Queue Command:
+<h3 class="fixed">
+    Queue Commands:
 </h3>
 
 <div1 class="fixed">
-    <A href='#' class="button">A</A>
-    <B href='#' class="button">B</B>
+    <Y class="button", href="#">Y</Y>
+    <buttonB class="button" href='#'>B</buttonB>
 </div1>
 
 <div2 class="fixed">
@@ -81,9 +93,14 @@
 </div3>
 
 <div4 class="fixed">
-    <select1 href="#" class="lbutton">Select</select1>
-    <select2 href="#" class="lbutton">Start</select2>
+    <select1 href="#" class="button1">Select</select1>
+    <select2 href="#" class="button1">Start</select2>
 </div4>
+
+<div5 class="fixed">
+    <X href='#' class="button">X</X>
+    <buttonA class="button" href='#'>A</buttonA>
+</div5>
 
 </body>
 </html>
