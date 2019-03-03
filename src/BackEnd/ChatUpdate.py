@@ -2,132 +2,132 @@ import time
 
 
 def pp(username, message):
-    if (message == "Up"):
+    if message == "Up":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "up"):
+    elif message == "up":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "Down"):
+    elif message == "Down":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "down"):
+    elif message == "down":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "left"):
+    elif message == "left":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "Left"):
-        username += " inputted command"
-        mtype = "COMMAND"
-        mtype = mtype.upper()
-        print('[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message))
-    elif (message == "Right"):
+    elif message == "Left":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "right"):
+    elif message == "Right":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "start"):
+    elif message == "right":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "Start"):
+    elif message == "start":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "START"):
+    elif message == "Start":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "select"):
+    elif message == "START":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "SELECT"):
+    elif message == "select":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "Select"):
+    elif message == "SELECT":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "x"):
+    elif message == "Select":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "X"):
+    elif message == "x":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "Y"):
+    elif message == "X":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "y"):
+    elif message == "Y":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "a"):
+    elif message == "y":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "A"):
+    elif message == "a":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "B"):
+    elif message == "A":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "b"):
+    elif message == "B":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "l"):
+    elif message == "b":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "L"):
+    elif message == "l":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "R"):
+    elif message == "L":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
-    elif (message == "r"):
+    elif message == "R":
+        username += " inputted command"
+        mtype = "COMMAND"
+        mtype = mtype.upper()
+        return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.gmtime()), mtype, username, message)
+    elif message == "r":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()

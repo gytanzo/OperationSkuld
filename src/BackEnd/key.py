@@ -1,6 +1,7 @@
 import win32api
 import win32con
 import time
+import BackEnd.ChatUpdate
 
 keyDelay = .01
 keymap = {
@@ -33,7 +34,16 @@ keymap = {
 }
 
 
+def set_username(string):
+    global username
+    username = string
+
+
+set_username("Gytanzo")
+
+
 def send_key(button):
     win32api.keybd_event(keymap[button], 0, 0, 0)
     time.sleep(keyDelay)
     win32api.keybd_event(keymap[button], 0, win32con.KEYEVENTF_KEYUP, 0)
+    print(BackEnd.ChatUpdate.pp(username, button))
