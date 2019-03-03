@@ -7,14 +7,14 @@ import sys
 class MyTestCase(unittest.TestCase):
     def test_something(self):
         self.assertEqual(BackEnd.key.send_key("Up"), None)
-        self.assertEqual(BackEnd.key.send_key("Up"), None)
+        self.assertEqual(BackEnd.key.send_key("up"), None)
         self.assertEqual(BackEnd.key.send_key("Down"), None)
         self.assertEqual(BackEnd.key.send_key("Down"), None)
         self.assertEqual(BackEnd.key.send_key("Left"), None)
         self.assertEqual(BackEnd.key.send_key("Right"), None)
         self.assertEqual(BackEnd.key.send_key("Left"), None)
         self.assertEqual(BackEnd.key.send_key("Right"), None)
-        self.assertEqual(BackEnd.key.send_key("b"), None)
+        self.assertEqual(BackEnd.key.send_key("start"), None)
         self.assertEqual(BackEnd.key.send_key("a"), None)
 
 
