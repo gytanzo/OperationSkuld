@@ -11,8 +11,12 @@ keymap = {
     "Right": win32con.VK_RIGHT,
     "b": ord("B"),
     "a": ord("A"),
-    "s": ord("S"), #start
-    "e": ord("E") #select
+    "y": ord("Y"),
+    "x": ord("X"),
+    "l": ord("L"),
+    "r": ord("R"),
+    "g": ord("G"), #start
+    "h": ord("H") #select
 }
 
 
