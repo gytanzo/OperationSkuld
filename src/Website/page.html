@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <script src="video.js"></script>
+    <script src="command.js"></script>
     <title>CSE Students Play Chrono Trigger</title>
 </head>
+
 <style>
     .button {
         background-color: #4CAF50; /* Green */
@@ -76,6 +78,13 @@
         left: 0;
         height: 85%;
     }
+
+    body3.fixed {
+        position: fixed;
+        top: 500px;
+        right: 10px;
+        width: 400px;
+    }
 </style>
 <body>
 
@@ -114,9 +123,17 @@
 </body1>
 
 <body2>
-    <img class="fixed" src="ChronoTrigger.jpg" alt="ChronoTrigger Title">
+    <img class="fixed" src="ChronoTrigger.jpg" alt="ChronoTrigger Title Screen">
 
 </body2>
+
+<body3 class="fixed" onload="loadChat();">
+    Message:<label for="message"></label><input type="text" id="message">
+    <button onclick="sendMessage();">Send</button>
+
+    <hr/>
+    <div id="Chat"></div><br/>
+</body3>
 
 </body>
 </html>
