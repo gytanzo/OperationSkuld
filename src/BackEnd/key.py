@@ -3,7 +3,7 @@ import win32con
 import win32ui
 import time,sys
 
-keyDelay = .1
+keyDelay = .001
 keymap = {
     "Up": win32con.VK_UP,
     "Left": win32con.VK_LEFT,
@@ -15,8 +15,8 @@ keymap = {
     "x": ord("X"),
     "l": ord("L"),
     "r": ord("R"),
-    "g": ord("G"), #start
-    "h": ord("H") #select
+    "s": ord("S"), #start
+    "e": ord("E") #select
 }
 
 
