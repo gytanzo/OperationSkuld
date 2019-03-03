@@ -42,9 +42,8 @@ def set_username(string):
 set_username("Gytanzo")
 
 
-def setup_list_of_actions():
-    global listOfActions
-    listOfActions = []
+global listOfActions
+listOfActions = []
 
 
 def send_key(button):
@@ -60,6 +59,3 @@ def append_actions():
     with open("Actions.txt", 'a') as f:
         for item in contents:
             f.write(item+'\n')
-
-
-append_actions()
