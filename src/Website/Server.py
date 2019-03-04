@@ -3,7 +3,8 @@ from bottle import get, post, request, route, static_file, run, error
 
 @route('/')
 def server():
-    return static_file("page.html", root = "")
+    return static_file("page.html", root="")
+
 
 
 #@post('/join')
