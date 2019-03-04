@@ -5,8 +5,6 @@ from bottle import get, post, request, route, static_file, run, error
 def server():
     return static_file("page.html", root="")
 
-
-
 #@post('/join')
 #def addUsers():
 #    new_user = {"Username" : request.json.get('Username'), 'Status' : request.json.get('Status')}
@@ -27,4 +25,4 @@ def error404(error):
     return "You should watch A Place Further Than The Universe."
 
 
-run(host = 'localhost', port = 8080, debug = True)
+run(host='0.0.0.0', port=8080, debug=True)
