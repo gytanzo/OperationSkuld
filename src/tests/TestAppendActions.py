@@ -1,7 +1,7 @@
 import unittest
 import Website.BackEnd_key
 import time
-time = '[%s]' % (time.strftime('%H:%M:%S', time.gmtime()))
+time = '[%s]' % (time.strftime('%H:%M:%S', time.localtime()))
 
 
 class MyTestCase(unittest.TestCase):
@@ -22,6 +22,7 @@ class MyTestCase(unittest.TestCase):
             for line in f:
                 string = line.rstrip()
             self.assertEqual(string, time + " " + '[COMMAND] Taco inputted command "START"')
+
 
 if __name__ == '__main__':
     unittest.main()

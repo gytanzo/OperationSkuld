@@ -2,7 +2,7 @@ import unittest
 import Website.BackEnd_ChatUpdate
 import time
 
-time = '[%s]' % (time.strftime('%H:%M:%S', time.gmtime()))
+time = '[%s]' % (time.strftime('%H:%M:%S', time.localtime()))
 
 
 class MyTestCase(unittest.TestCase):
