@@ -8,7 +8,6 @@ class ButtonGod(gameinfo: Placeholder, xScale: Double, yScale: Double) extends B
   minWidth = 100 * xScale
   minHeight = 100 * yScale
   style = "-fx-font: 12 ariel;"
-
 }
 
 class ActionButton(val actionKey: String, game: Placeholder, xScale: Double = 1.0, yScale: Double = 1.0) extends ButtonGod(game, xScale, yScale) {
