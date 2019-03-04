@@ -1,7 +1,7 @@
 import win32api
 import win32con
 import time
-import Website.ChatUpdateBackEnd
+import Website.BackEnd_ChatUpdate
 
 keyDelay = .01
 keymap = {
@@ -47,7 +47,7 @@ def send_key(button):
     win32api.keybd_event(keymap[button], 0, 0, 0)
     time.sleep(keyDelay)
     win32api.keybd_event(keymap[button], 0, win32con.KEYEVENTF_KEYUP, 0)
-    message = Website.ChatUpdateBackEnd.pp(username, button)
+    message = Website.BackEnd_ChatUpdate.pp(username, button)
     listOfActions.append(message)
 
 
