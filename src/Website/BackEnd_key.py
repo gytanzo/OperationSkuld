@@ -39,7 +39,6 @@ def set_username(string):
     username = string
 
 
-global listOfActions
 listOfActions = []
 
 

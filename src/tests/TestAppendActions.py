@@ -1,8 +1,8 @@
 import unittest
 import Website.BackEnd_key
 import time
-
 time = '[%s]' % (time.strftime('%H:%M:%S', time.gmtime()))
+
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
@@ -22,7 +22,6 @@ class MyTestCase(unittest.TestCase):
             for line in f:
                 string = line.rstrip()
             self.assertEqual(string, time + " " + '[COMMAND] Taco inputted command "START"')
-
 
 if __name__ == '__main__':
     unittest.main()
