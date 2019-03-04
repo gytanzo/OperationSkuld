@@ -1,13 +1,19 @@
-from bottle import get, post, request, route, static_file, run, error
+from bottle import get, post, request, route, static_file, run, error, response
 
 
 @route('/')
 def server():
     return static_file("page.html", root="")
 
+
 @route('/image')
 def image():
     return static_file("ChronoTrigger.jpg", root="")
+
+
+@route('/hello')
+def hello_again():
+    return static_file("cookie.js", root="")
 
 #@post('/join')
 #def addUsers():
@@ -26,7 +32,7 @@ def image():
 
 @error(404)
 def error404(error):
-    return "Bobby has failed this city."
+    return "Detective Pikachu."
 
 
-run(host="0.0.0.0", port=8080, debug=True)
+run(host="localhost", port=8080, debug=True)
