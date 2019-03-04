@@ -5,6 +5,10 @@ from bottle import get, post, request, route, static_file, run, error
 def server():
     return static_file("page.html", root="")
 
+@route('/image')
+def image():
+    return static_file("ChronoTrigger.jpg", root="")
+
 #@post('/join')
 #def addUsers():
 #    new_user = {"Username" : request.json.get('Username'), 'Status' : request.json.get('Status')}
@@ -22,7 +26,7 @@ def server():
 
 @error(404)
 def error404(error):
-    return "You should watch A Place Further Than The Universe."
+    return "Bobby has failed this city."
 
 
-run(host='0.0.0.0', port=8080, debug=True)
+run(host="0.0.0.0", port=8080, debug=True)
