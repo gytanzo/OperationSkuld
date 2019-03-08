@@ -28,7 +28,7 @@ def allNameinList():
 
 @error(404)
 def error404(error):
-    return "That's it, time to switch major!"
+    return "That's it, time to switch majors!"
 
 
 run(host="localhost", port=8080, debug=True)
