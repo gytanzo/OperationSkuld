@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <script src="video.js"></script>
     <script src="command.js"></script>
-    <script src= "/cookie" ></script>
+    <script src="/cookie"></script>
+    <script src="/addname"></script>
     <title>CSE Students Play Chrono Trigger</title>
+
 </head>
 
 <style>
@@ -21,28 +23,37 @@
         font-size: 16px;
     }
     .buttonlong {
-         background-color: #4CAF50; /* Green */
-         border: none;
-         color: white;
-         width: 32px;
-         padding: 40px 100px;
-         text-align: center;
-         text-decoration: none;
-         display: inline-block;
-         font-size: 16px;
-     }
-
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        width: 32px;
+        padding: 40px 100px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+    .bobbybutton {
+        background-color: #2f35af; /* Green */
+        border: none;
+        color: white;
+        width: 100px;
+        padding: 5px 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
     div1.fixed {
         position: fixed;
         bottom: 110px;
         right: 420px;
         width: 228px;
         border: 3px solid #73AD21;
-
     }
     div2.fixed {
         position: fixed;
-        bottom: 0px;
+        bottom: 220px;
         right: 0;
         border: 3px solid #73AD21;
     }
@@ -53,7 +64,6 @@
         width: 344px;
         border: 3px solid #73AD21;
     }
-
     div4.fixed {
         position: fixed;
         bottom: 0;
@@ -68,20 +78,30 @@
         width: 228px;
         border: 3px solid #73AD21;
     }
+    div6.fixed {
+        position: fixed;
+        top: 10px;
+        right: 5px;
+        width: 400px;
+    }
+    div7.fixed {
+        position: fixed;
+        top: 5px;
+        right: -240px;
+        width: 400px;
+    }
     h3.fixed {
         position: fixed;
         bottom: 310px;
         right: 440px;
         font-size: 30px;
     }
-
     img.fixed{
         position: fixed;
         top: 0;
         left: 0;
         height: 85%;
     }
-
     body3.fixed {
         position: fixed;
         top: 40%;
@@ -90,61 +110,55 @@
     }
     body4.fixed {
         position:fixed;
-        top: 20px;
+        top: 60px;
         right: 7%;
         font-size:12px;
     }
-    div.fixed {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 400px;
-        border: 3px solid #73AD21;
-    }
-
 </style>
 
 <body onload="checkCookie()">
 
 <body1>
-<h3 class="fixed">
-    Queue Commands:
-</h3>
+    <h3 class="fixed">
+        Queue Commands:
+    </h3>
 
-<div1 class="fixed">
-    <a class="button" href="#">Y</a>
-    <a class="button" href='#'>B</a>
-</div1>
+    <div1 class="fixed">
+        <a class="button" href="#">Y</a>
+        <a class="button" href='#'>B</a>
+    </div1>
 
-<div2 class="fixed">
-    <a href="#" class="button">L</a>
-    <a href='#' class="button">Up</a>
-    <a href="#" class="button">R</a>
-</div2>
+    <div2 class="fixed">
+        <a href="#" class="button">L</a>
+        <a href='#' class="button">Up</a>
+        <a href="#" class="button">R</a>
+    </div2>
 
-<div3 class="fixed">
-    <a href='#' class="button">Left</a>
-    <a href='#' class="button">Down</a>
-    <a href='#' class="button">Right</a>
+    <div3 class="fixed">
+        <a href='#' class="button">Left</a>
+        <a href='#' class="button">Down</a>
+        <a href='#' class="button">Right</a>
 
-</div3>
+    </div3>
 
-<div4 class="fixed">
-    <a href="#" class="buttonlong">Select</a>
-    <a href="#" class="buttonlong" >Start</a>
-</div4>
+    <div4 class="fixed">
+        <a href="#" class="buttonlong">Select</a>
+        <a href="#" class="buttonlong" >Start</a>
+    </div4>
 
-<div5 class="fixed">
-    <a href='#' class="button">X</a>
-    <a class="button" href='#'>A</a>
-</div5>
+    <div5 class="fixed">
+        <a href='#' class="button">X</a>
+        <a class="button" href='#'>A</a>
+    </div5>
 
-    <div class="fixed">
+    <div6 class="fixed">
         <form>
-            Name: <input name="name" type="text" size="45">
+            Name: <input name="name" type="text" size="25">
         </form>
-        <button id="addName()">Submit</button>
-    </div>
+    </div6>
+    <div7 class="fixed">
+        <a href="#" class="bobbybutton" onclick="addName()">Submit</a>
+    </div7>
 </body1>
 
 <body2>
@@ -154,7 +168,7 @@
 </body2>
 
 <body3 class="fixed" onload="loadChat();">
-    Message:<label for="message"></label><input type="text" id="message" height="42" width="42>
+    Message:<label for="message"></label><input type="text" id="message">
     <button onclick="sendMessage();">Send</button>
 
     <hr/>
