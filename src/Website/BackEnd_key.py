@@ -54,4 +54,7 @@ def append_actions():
     contents = listOfActions
     with open("chat.txt", 'a') as f:
         for item in contents:
-            f.write(item+'\n')
+            if "[COMMAND]" in item:
+                f.write(item.replace("[COMMAND]", "") + '\n') #Remove .replace("[COMMAND]", "") to have "[COMMAND]" be printed
+            elif "[MESSAGE]" in item:
+                f.write(item.replace("[MESSAGE]", "") + '\n') #Remove .replace("[MESSAGE]", "") to have "[MESSAGE]" be printed
