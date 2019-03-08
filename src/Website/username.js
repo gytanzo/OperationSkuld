@@ -24,7 +24,7 @@ function addName() {
 
     var name = document.getElementById("addName");
 
-    //var User = [name.value];
+    var User = [name.value];
     if (button.click == True){
         var toSend = JSON.stringify({"User": User});
     }
