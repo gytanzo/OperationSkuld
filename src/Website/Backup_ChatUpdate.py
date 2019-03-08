@@ -12,12 +12,22 @@ def pp(username, message):
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.localtime()), mtype, username, message)
+    elif message == "UP":
+        username += " inputted command"
+        mtype = "COMMAND"
+        mtype = mtype.upper()
+        return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.localtime()), mtype, username, message)
     elif message == "Down":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.localtime()), mtype, username, message)
     elif message == "down":
+        username += " inputted command"
+        mtype = "COMMAND"
+        mtype = mtype.upper()
+        return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.localtime()), mtype, username, message)
+    elif message == "DOWN":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
@@ -32,12 +42,22 @@ def pp(username, message):
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.localtime()), mtype, username, message)
+    elif message == "LEFT":
+        username += " inputted command"
+        mtype = "COMMAND"
+        mtype = mtype.upper()
+        return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.localtime()), mtype, username, message)
     elif message == "Right":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()
         return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.localtime()), mtype, username, message)
     elif message == "right":
+        username += " inputted command"
+        mtype = "COMMAND"
+        mtype = mtype.upper()
+        return '[%s] [%s] %s "%s"' % (time.strftime('%H:%M:%S', time.localtime()), mtype, username, message)
+    elif message == "RIGHT":
         username += " inputted command"
         mtype = "COMMAND"
         mtype = mtype.upper()

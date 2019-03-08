@@ -20,12 +20,14 @@ class MyTestCase(unittest.TestCase):
         Website.BackEnd_key.send_key("A")
         Website.BackEnd_key.set_username("VentusAir")
         Website.BackEnd_key.send_key("B")
+        Website.BackEnd_key.set_username("Jason")
+        Website.BackEnd_key.send_key("HELLO")
         Website.BackEnd_key.append_actions()
         with open("chat.txt") as f:
             string = ""
             for line in f:
                 string = line.rstrip()
-            self.assertEqual(string, time + " " + '[COMMAND] VentusAir inputted command "B"')
+            self.assertEqual(string, time + " " + '[MESSAGE] Jason inputted command HELLO')
 
 
 if __name__ == '__main__':

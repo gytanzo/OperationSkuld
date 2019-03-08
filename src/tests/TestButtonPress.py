@@ -6,6 +6,7 @@ import sys
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
+        Website.BackEnd_key.set_username("PLACEHOLDER")
         self.assertEqual(Website.BackEnd_key.send_key("Up"), None)
         self.assertEqual(Website.BackEnd_key.send_key("up"), None)
         self.assertEqual(Website.BackEnd_key.send_key("Down"), None)

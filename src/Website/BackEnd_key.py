@@ -42,12 +42,16 @@ def set_username(string):
 listOfActions = []
 
 
-def send_key(button):
-    win32api.keybd_event(keymap[button], 0, 0, 0)
-    time.sleep(keyDelay)
-    win32api.keybd_event(keymap[button], 0, win32con.KEYEVENTF_KEYUP, 0)
-    message = Website.BackEnd_ChatUpdate.pp(username, button)
-    listOfActions.append(message)
+def send_key(input):
+    if input in ['Up', 'up', 'UP', 'Down', 'down', 'DOWN', 'left', 'Left', 'LEFT', 'Right', 'right', 'RIGHT', 'Start', 'start', 'START', 'Select', 'select', 'SELECT', 'x', 'X', 'Y', 'y', 'A', 'a', 'B', 'b', 'l', 'L', 'R', 'r']:
+        win32api.keybd_event(keymap[input], 0, 0, 0)
+        time.sleep(keyDelay)
+        win32api.keybd_event(keymap[input], 0, win32con.KEYEVENTF_KEYUP, 0)
+        message = Website.BackEnd_ChatUpdate.pp(username, input)
+        listOfActions.append(message)
+    else:
+        message = Website.BackEnd_ChatUpdate.pp(username, input)
+        listOfActions.append(message)
 
 
 def append_actions():
