@@ -11,28 +11,24 @@ def image():
     return static_file("ChronoTrigger.jpg", root="")
 
 
-@route('/hello')
-def hello_again():
+@route("/cookie")
+def cookie():
     return static_file("cookie.js", root="")
 
-#@post('/join')
-#def addUsers():
-#    new_user = {"Username" : request.json.get('Username'), 'Status' : request.json.get('Status')}
-#    User.append(new_user)
-#    return {"User"" : User}
-#textfile name will be Users
-#user name will be the key and name will be the value
-#Username : namess and Status  for json string ingame, quit
+
+@post('/addName')
+def addnewUser():
+    return static_file("username.js", root="")
 
 
-#@get('/all')
-#def allUsers():
-#    all_user =
- #   return {"Username" : Username, "Stats", Status}
+@get('/getNameList')
+def allNameinList():
+    return static_file("username.js", root="")
+
 
 @error(404)
 def error404(error):
-    return "Detective Pikachu."
+    return "That's it, time to switch major!"
 
 
 run(host="localhost", port=8080, debug=True)

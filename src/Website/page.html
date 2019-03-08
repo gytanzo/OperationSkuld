@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <script src="video.js"></script>
     <script src="command.js"></script>
-    <script src="cookie.js"></script>
+    <script src= "/cookie" ></script>
     <title>CSE Students Play Chrono Trigger</title>
 </head>
 
@@ -31,16 +31,18 @@
          display: inline-block;
          font-size: 16px;
      }
+
     div1.fixed {
         position: fixed;
         bottom: 110px;
         right: 420px;
         width: 228px;
         border: 3px solid #73AD21;
+
     }
     div2.fixed {
         position: fixed;
-        bottom: 220px;
+        bottom: 0px;
         right: 0;
         border: 3px solid #73AD21;
     }
@@ -92,8 +94,17 @@
         right: 7%;
         font-size:12px;
     }
+    div.fixed {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 400px;
+        border: 3px solid #73AD21;
+    }
+
 </style>
-<body>
+
+<body onload="checkCookie()">
 
 <body1>
 <h3 class="fixed">
@@ -127,6 +138,13 @@
     <a href='#' class="button">X</a>
     <a class="button" href='#'>A</a>
 </div5>
+
+    <div class="fixed">
+        <form>
+            Name: <input name="name" type="text" size="45">
+        </form>
+        <button id="addName()">Submit</button>
+    </div>
 </body1>
 
 <body2>
@@ -136,7 +154,7 @@
 </body2>
 
 <body3 class="fixed" onload="loadChat();">
-    Message:<label for="message"></label><input type="text" id="message">
+    Message:<label for="message"></label><input type="text" id="message" height="42" width="42>
     <button onclick="sendMessage();">Send</button>
 
     <hr/>
