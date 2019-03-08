@@ -22,12 +22,16 @@ function ajaxPostRequest(path, data, callback){
 
 function addName() {
 
-    var name = document.getElementById("addName");
-
-    var User = [name.value];
-    if (button.click == True){
-        var toSend = JSON.stringify({"User": User});
+    var name = document.getElementById("addName").value
+    var data = {}
+    alert("PEAVCE")
+    if (button.onclick == True){
+        var txt = JSON.parse({"User":name})
+        data.push(txt)
+        var toSend = JSON.stringify(data);
     }
+    var fs = require('fs');
+    fs.writeFile('package.json', toSend, 'utf8', callback);
     ajaxPostRequest("/addName", toSend, "nameList");
     }
 
