@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <script src="video.js"></script>
-    <script src="username.js"></script>
     <script src="/cookie"></script>
     <script src="/addname"></script>
     <title>CSE Students Play Chrono Trigger</title>
@@ -15,7 +14,7 @@
         var b = "b"
         var b = JSON.stringify(b)
 
-        document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B"
+        document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B<br>"
     }
 </script>
 
@@ -156,7 +155,7 @@
 
         <div1 class="fixed">
             <a class="button" href="#">Y</a>
-            <a class="button" href='#' onclick="">B</a>
+            <a class="button" href='#' onclick="printB()">B</a>
         </div1>
 
         <div2 class="fixed">
@@ -184,7 +183,7 @@
 
         <div6 class="fixed">
             <form>
-                Name: <input id="nameLabel" size="25" type="text">
+                Name: <input id="addName" size="25" type="text">
 
             </form>
         </div6>
