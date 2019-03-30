@@ -2,6 +2,7 @@ import win32api
 import win32con
 import time
 import Website.BackEnd_ChatUpdate
+import json
 
 keyDelay = .01
 keymap = {
@@ -42,15 +43,16 @@ def set_username(string):
 listOfActions = []
 
 
-def send_key(input):
-    if input in ['Up', 'up', 'UP', 'Down', 'down', 'DOWN', 'left', 'Left', 'LEFT', 'Right', 'right', 'RIGHT', 'Start', 'start', 'START', 'Select', 'select', 'SELECT', 'x', 'X', 'Y', 'y', 'A', 'a', 'B', 'b', 'l', 'L', 'R', 'r']:
-        win32api.keybd_event(keymap[input], 0, 0, 0)
+def send_key(json_input):
+    key_input = json.loads(json_input)
+    if key_input in ['Up', 'up', 'UP', 'Down', 'down', 'DOWN', 'left', 'Left', 'LEFT', 'Right', 'right', 'RIGHT', 'Start', 'start', 'START', 'Select', 'select', 'SELECT', 'x', 'X', 'Y', 'y', 'A', 'a', 'B', 'b', 'l', 'L', 'R', 'r']:
+        win32api.keybd_event(keymap[key_input], 0, 0, 0)
         time.sleep(keyDelay)
-        win32api.keybd_event(keymap[input], 0, win32con.KEYEVENTF_KEYUP, 0)
-        message = Website.BackEnd_ChatUpdate.pp(username, input)
+        win32api.keybd_event(keymap[key_input], 0, win32con.KEYEVENTF_KEYUP, 0)
+        message = Website.BackEnd_ChatUpdate.pp(username, key_input)
         listOfActions.append(message)
     else:
-        message = Website.BackEnd_ChatUpdate.pp(username, input)
+        message = Website.BackEnd_ChatUpdate.pp(username, key_input)
         listOfActions.append(message)
 
 
