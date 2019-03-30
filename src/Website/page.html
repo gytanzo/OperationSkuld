@@ -5,15 +5,21 @@
     <script src="video.js"></script>
     <script src="/cookie"></script>
     <script src="/addname"></script>
+    <script src="/backEnd_key"></script>
     <title>CSE Students Play Chrono Trigger</title>
 
 </head>
 
 <script>
-    function printB (){
-        var b = "b"
-        var b = JSON.stringify(b)
+    function printA(){
+        document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "A<br>"
 
+    }
+    function printB (){
+        document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B<br>"
+        var input = "REFRESH"
+        var anotherinput= JSON.stringify(input)
+        ajaxPostRequest("/backEnd_key", anotherinput, printA)
         document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B<br>"
     }
 </script>
@@ -178,7 +184,7 @@
 
         <div5 class="fixed">
             <a class="button" href='#'>X</a>
-            <a class="button" href='#'>A</a>
+            <a class="button" href='#' onclick="printA()">A</a>
         </div5>
 
         <div6 class="fixed">

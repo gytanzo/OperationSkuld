@@ -46,7 +46,7 @@ listOfActions = []
 
 def send_key(json_input):
     key_input = json.loads(json_input)
-    if key_input in ['Up', 'Refresh', 'up', 'UP', 'Down', 'down', 'DOWN', 'left', 'Left', 'LEFT', 'Right', 'right', 'RIGHT', 'Start', 'start', 'START', 'Select', 'select', 'SELECT', 'x', 'X', 'Y', 'y', 'A', 'a', 'B', 'b', 'l', 'L', 'R', 'r']:
+    if key_input in ['Up', 'REFRESH', 'up', 'UP', 'Down', 'down', 'DOWN', 'left', 'Left', 'LEFT', 'Right', 'right', 'RIGHT', 'Start', 'start', 'START', 'Select', 'select', 'SELECT', 'x', 'X', 'Y', 'y', 'A', 'a', 'B', 'b', 'l', 'L', 'R', 'r']:
         win32api.keybd_event(keymap[key_input], 0, 0, 0)
         time.sleep(keyDelay)
         win32api.keybd_event(keymap[key_input], 0, win32con.KEYEVENTF_KEYUP, 0)
