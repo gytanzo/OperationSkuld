@@ -4,7 +4,7 @@ import time
 import Website.BackEnd_ChatUpdate
 import json
 
-keyDelay = 1
+keyDelay = .01
 keymap = {
     "WINDOWS": win32con.VK_LWIN,
     "UP": win32con.VK_UP,
@@ -35,7 +35,7 @@ set_username("kappa")
 
 def send_key(json_input):
     key_input = json.loads(json_input)
-    if key_input in ['UP', 'DOWN', 'LEFT', 'RIGHT', 'START', 'SELECT', 'X', 'Y', 'A', 'B', 'l', 'R']:
+    if key_input in ['WINDOWS', 'UP', 'DOWN', 'LEFT', 'RIGHT', 'START', 'SELECT', 'X', 'Y', 'A', 'B', 'l', 'R']:
         win32api.keybd_event(keymap[key_input], 0, 0, 0)
         time.sleep(keyDelay)
         win32api.keybd_event(keymap[key_input], 0, win32con.KEYEVENTF_KEYUP, 0)
