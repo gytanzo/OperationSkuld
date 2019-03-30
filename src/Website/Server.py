@@ -10,6 +10,10 @@ def server():
 def image():
     return static_file("ChronoTrigger.jpg", root="")
 
+@route('/backEnd_key')
+def backend_key():
+    return static_file("BackEnd_key.py", root="")
+
 
 @route("/cookie")
 def cookie():
