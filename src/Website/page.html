@@ -51,14 +51,16 @@
 </script>
 
 <script>
+    function doNothing(){
+
+    }
     function printA(){
         document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "A<br>";
+        ajaxGetRequest("/keyA", doNothing);
     }
     function printB (){
         document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B<br>"
-        var input = "WINDOWS";
-        var anotherinput= JSON.stringify(input);
-        ajaxGetRequest("/backEndkey", printA);
+        ajaxGetRequest("/keyB", doNothing);
         document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B<br>"
     }
 </script>
