@@ -10,9 +10,18 @@
 
 </head>
 
+<script>
+    function printB (){
+        var b = "b"
+        var b = JSON.stringify(b)
+
+        document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B"
+    }
+</script>
+
 <style>
     .button {
-        background-color: #4CAF50; /* Green */
+        background-color: #af1d35; /* Green */
         border: none;
         color: white;
         width: 32px;
@@ -52,14 +61,14 @@
         bottom: 110px;
         right: 420px;
         width: 228px;
-        border: 3px solid #73AD21;
+        border: 3px solid #af1d35;
     }
 
     div2.fixed {
         position: fixed;
         bottom: 220px;
         right: 0;
-        border: 3px solid #73AD21;
+        border: 3px solid #af1d35;
     }
 
     div3.fixed {
@@ -67,7 +76,7 @@
         bottom: 110px;
         right: 0;
         width: 344px;
-        border: 3px solid #73AD21;
+        border: 3px solid #af1d35;
     }
 
     div4.fixed {
@@ -75,7 +84,7 @@
         bottom: 0;
         right: 0;
         width: 468px;
-        border: 3px solid #73AD21;
+        border: 3px solid #4caf50;
     }
 
     div5.fixed {
@@ -83,7 +92,7 @@
         bottom: 220px;
         right: 420px;
         width: 228px;
-        border: 3px solid #73AD21;
+        border: 3px solid #af1d35;
     }
 
     div6.fixed {
@@ -147,7 +156,7 @@
 
         <div1 class="fixed">
             <a class="button" href="#">Y</a>
-            <a class="button" href='#'>B</a>
+            <a class="button" href='#' onclick="">B</a>
         </div1>
 
         <div2 class="fixed">
@@ -180,7 +189,7 @@
             </form>
         </div6>
         <div7 class="fixed">
-            <a class="bobbybutton" href="#" onmouseover="addName()">Submit</a>
+            <a class="bobbybutton" href="#" onclick="addName()">Submit</a>
         </div7>
     </allmybuttons>
 
@@ -201,7 +210,7 @@
     <br/>
 </body3>
 
-<body4 class="fixed" onload="createCookie(name, Andrew)">
+<body4 id = "chatbox" class="fixed" onload="createCookie(name, Andrew)">
     <script>document.write("[23:34:51] [COMMAND] Gytanzo inputted command Start<br>");
     document.write("[23:34:52] [COMMAND] Meep inputted command Down<br>");
     document.write("[23:34:53] [COMMAND] ChitogeSucks inputted command Down<br>");
