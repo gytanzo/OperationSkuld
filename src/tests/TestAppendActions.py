@@ -27,7 +27,7 @@ class MyTestCase(unittest.TestCase):
             string = ""
             for line in f:
                 string = line.rstrip()
-            self.assertEqual(string, time + " " + '[MESSAGE] Jason inputted command HELLO')
+            self.assertEqual(string, time + " " + '[MESSAGE] Jason: HELLO')
 
 
 if __name__ == '__main__':
