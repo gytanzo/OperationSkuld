@@ -5,8 +5,6 @@ import  Website.user
 
 
 @route('/')
-
-
 def server():
     return static_file("page.html", root="")
 
