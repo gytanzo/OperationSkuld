@@ -10,21 +10,13 @@ json_left = json.dumps("Left")
 json_right = json.dumps("Right")
 json_start = json.dumps("Start")
 json_a = json.dumps("a")
+json_win = json.dumps("WINDOWS")
 
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
         Website.BackEnd_key.set_username("PLACEHOLDER")
-        self.assertEqual(Website.BackEnd_key.send_key(json_up), None)
-        self.assertEqual(Website.BackEnd_key.send_key(json_up), None)
-        self.assertEqual(Website.BackEnd_key.send_key(json_down), None)
-        self.assertEqual(Website.BackEnd_key.send_key(json_down), None)
-        self.assertEqual(Website.BackEnd_key.send_key(json_left), None)
-        self.assertEqual(Website.BackEnd_key.send_key(json_right), None)
-        self.assertEqual(Website.BackEnd_key.send_key(json_left), None)
-        self.assertEqual(Website.BackEnd_key.send_key(json_right), None)
-        self.assertEqual(Website.BackEnd_key.send_key(json_start), None)
-        self.assertEqual(Website.BackEnd_key.send_key(json_a), None)
+        self.assertEqual(Website.BackEnd_key.send_key(json_win), None)
 
 
 if __name__ == "__main__":
