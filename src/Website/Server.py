@@ -21,7 +21,7 @@ def backend_key():
 
 @route('/keyB')
 def backend_key():
-    return Website.BackEnd_key.send_key(json.dumps("WINDOWS"))
+    return Website.BackEnd_key.send_key(json.dumps("B"))
 
 
 @route('/keyX')
