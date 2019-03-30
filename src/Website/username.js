@@ -16,8 +16,12 @@ function ajaxPostRequest(path, data, callback){
             callback(this.response);
         }
     };
-    request.open("POST", path);
+    request.open("POST", path, true);
     request.send(data);
+}
+
+function clearer(){
+    document.getElementById("chatbox").innerHTML = ""
 }
 
 function addName() {

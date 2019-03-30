@@ -44,6 +44,9 @@ def set_username(string):
 listOfActions = []
 
 
+set_username("kappa")
+
+
 def send_key(json_input):
     key_input = json.loads(json_input)
     if key_input in ['Up', 'WINDOWS', 'up', 'UP', 'Down', 'down', 'DOWN', 'left', 'Left', 'LEFT', 'Right', 'right', 'RIGHT', 'Start', 'start', 'START', 'Select', 'select', 'SELECT', 'x', 'X', 'Y', 'y', 'A', 'a', 'B', 'b', 'l', 'L', 'R', 'r']:
@@ -55,6 +58,7 @@ def send_key(json_input):
     else:
         message = Website.BackEnd_ChatUpdate.pp(username, key_input)
         listOfActions.append(message)
+    return
 
 
 def append_actions():

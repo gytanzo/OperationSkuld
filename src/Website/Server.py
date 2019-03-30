@@ -2,7 +2,11 @@ from bottle import get, post, request, route, static_file, run, error, response
 import json
 import Website.BackEnd_key
 import  Website.user
+
+
 @route('/')
+
+
 def server():
     return static_file("page.html", root="")
 
@@ -14,7 +18,7 @@ def image():
 
 @route('/backEndkey')
 def backend_key():
-    return Website.BackEnd_key.send_key("")
+    return Website.BackEnd_key.send_key(json.dumps("WINDOWS"))
 
 
 @route("/cookie")
