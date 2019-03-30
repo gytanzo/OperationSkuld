@@ -19,7 +19,7 @@
         document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B<br>"
         var input = "REFRESH"
         var anotherinput= JSON.stringify(input)
-        ajaxPostRequest("/backEnd_key", anotherinput, printA)
+        ajaxGetRequest("/backEndkey", printA)
         document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B<br>"
     }
 </script>

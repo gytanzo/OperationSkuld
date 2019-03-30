@@ -1,5 +1,6 @@
 from bottle import get, post, request, route, static_file, run, error, response
-
+import json
+import Website.BackEnd_key
 import  Website.user
 @route('/')
 def server():
@@ -10,9 +11,10 @@ def server():
 def image():
     return static_file("ChronoTrigger.jpg", root="")
 
-@route('/backEnd_key')
+
+@route('/backEndkey')
 def backend_key():
-    return static_file("BackEnd_key.py", root="")
+    return Website.BackEnd_key.send_key("")
 
 
 @route("/cookie")

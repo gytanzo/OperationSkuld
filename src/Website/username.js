@@ -5,7 +5,7 @@ function ajaxGetRequest(path, callback){
             callback(this.response);
         }
     };
-    request.open("GET", path);
+    request.open("GET", path, true);
     request.send();
 }
 
