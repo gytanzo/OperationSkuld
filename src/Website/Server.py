@@ -24,6 +24,57 @@ def backend_key():
     return Website.BackEnd_key.send_key(json.dumps("WINDOWS"))
 
 
+@route('/keyX')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("X"))
+
+
+@route('/keyY')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("Y"))
+
+
+@route('/keyL')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("L"))
+
+
+@route('/keyR')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("R"))
+
+
+@route('/keyLeft')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("LEFT"))
+
+
+@route('/keyRight')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("RIGHT"))
+
+
+@route('/keyUp')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("UP"))
+
+
+@route('/keyDown')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("DOWN"))
+
+
+@route('/keySelect')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("SELECT"))
+
+
+@route('/keyStart')
+def backend_key():
+    return Website.BackEnd_key.send_key(json.dumps("START"))
+
+
+
 @route("/cookie")
 def cookie():
     return static_file("cookie.js", root="")

@@ -50,18 +50,45 @@
     }
 </script>
 
-<script>
+<script id="Button Presses">
     function doNothing(){
 
     }
     function printA(){
-        document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "A<br>";
         ajaxGetRequest("/keyA", doNothing);
     }
     function printB (){
-        document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B<br>"
         ajaxGetRequest("/keyB", doNothing);
-        document.getElementById("chatbox").innerHTML = document.getElementById("chatbox").innerHTML + "B<br>"
+    }
+    function printX(){
+        ajaxGetRequest("/keyX", doNothing);
+    }
+    function printY (){
+        ajaxGetRequest("/keyY", doNothing);
+    }
+    function printL(){
+        ajaxGetRequest("/keyL", doNothing);
+    }
+    function printR (){
+        ajaxGetRequest("/keyR", doNothing);
+    }
+    function printLeft(){
+        ajaxGetRequest("/keyLeft", doNothing);
+    }
+    function printRight (){
+        ajaxGetRequest("/keyRight", doNothing);
+    }
+    function printDown(){
+        ajaxGetRequest("/keyDown", doNothing);
+    }
+    function printUp (){
+        ajaxGetRequest("/keyUp", doNothing);
+    }
+    function printSelect(){
+        ajaxGetRequest("/keySelect", doNothing);
+    }
+    function printStart (){
+        ajaxGetRequest("/keyStart", doNothing);
     }
 </script>
 
@@ -201,30 +228,30 @@
         </h3>
 
         <div1 class="fixed">
-            <a class="button" href="#">Y</a>
+            <a class="button" href="#" onclick="printY()">Y</a>
             <a class="button" href='#' onclick="printB()">B</a>
         </div1>
 
         <div2 class="fixed">
-            <a class="button" href="#">L</a>
-            <a class="button" href='#'>Up</a>
-            <a class="button" href="#">R</a>
+            <a class="button" href="#" onclick="printL()">L</a>
+            <a class="button" href='#' onclick="printUp()">Up</a>
+            <a class="button" href="#" onclick="printR()">R</a>
         </div2>
 
         <div3 class="fixed">
-            <a class="button" href='#'>Left</a>
-            <a class="button" href='#'>Down</a>
-            <a class="button" href='#'>Right</a>
+            <a class="button" href='#' onclick="printLeft()">Left</a>
+            <a class="button" href='#' onclick="printDown()">Down</a>
+            <a class="button" href='#' onclick="printRight()">Right</a>
 
         </div3>
 
         <div4 class="fixed">
-            <a class="buttonlong" href="#">Select</a>
-            <a class="buttonlong" href="#">Start</a>
+            <a class="buttonlong" href="#" onclick="printSelect()">Select</a>
+            <a class="buttonlong" href="#" onclick="printStart()">Start</a>
         </div4>
 
         <div5 class="fixed">
-            <a class="button" href='#'>X</a>
+            <a class="button" href='#' onclick="printX()">X</a>
             <a class="button" href='#' onclick="printA()">A</a>
         </div5>
 
