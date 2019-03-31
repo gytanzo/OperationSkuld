@@ -5,7 +5,7 @@ import time,sys
 import Website.BackEnd_ChatUpdate
 import json
 
-keyDelay = 1
+keyDelay = .01
 keymap = {
     "WINDOWS": win32con.VK_LWIN,
     "UP": win32con.VK_UP,
