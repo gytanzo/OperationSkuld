@@ -74,7 +74,6 @@ def backend_key():
     return Website.BackEnd_key.send_key(json.dumps("START"))
 
 
-
 @route("/cookie")
 def cookie():
     return static_file("cookie.js", root="")
@@ -95,4 +94,4 @@ def error404(error):
     return "Holy fucking shit. I want to bang Zero Two so goddamn bad. I can't stand it anymore. Any time there’s a scene with Zero Two, I get a massive erection. I've seen literally every rule 34 post there is of her online. My dreams are nothing but constant fucking sex with Zero Two. I'm sick of waking up every morning with six nuts in my boxers and knowing that those are nuts that should've been busted inside of Zero Two’s tight dino pussy. God I wish I was Hiro because I fucking know for a fact that Zero Two drains his balls daily. I want her to suck all of my humanity out and ride me to death. Anyways, do you guys relate to this?"
 
 
-run(host="localhost", port=8080, debug=True)
+run(host="10.84.23.177", port=8080, debug=True)
