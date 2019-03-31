@@ -30,7 +30,7 @@ function addName() {
     }
     var name = document.getElementById("addName").value;
     alert("PEAVCE");
-    if (button.onclick == True){
+    if (button.onclick == true){
         var txt = JSON.parse({"User":name});
         var toSend = JSON.stringify(txt);
     }
