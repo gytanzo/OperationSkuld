@@ -45,7 +45,7 @@ function checkCookie() {
     } else {
         user = prompt("Please enter your name:", "");
         if (user != "" && user != null) {
-            setCookie("username", user, 365);
+            setCookie("username", user, 1);
         }
     }
 }
