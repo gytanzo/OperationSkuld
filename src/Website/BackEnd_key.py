@@ -1,6 +1,7 @@
 import win32api
 import win32con
-import time
+import win32ui
+import time,sys
 import Website.BackEnd_ChatUpdate
 import json
 
@@ -52,3 +53,10 @@ def append_actions():
     with open("chat.txt", 'a') as f:
         for item in contents:
             f.write(item+'\n')
+
+
+if __name__ == "__main__":
+    win = win32ui.FindWindow(None, sys.argv[1])
+    win.SetForegroundWindow()
+    win.SetFocus()
+    send_key(sys.argv[2])

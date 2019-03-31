@@ -1,0 +1,13 @@
+{
+
+  "TWITCH_OAUTH": "46axtyd98u9inlmgy4uj5jcuphwkww",
+  "TWITCH_USERNAME": "CSEPlaysChronoTrigger",
+  "TWITCH_CHANNEL": "CSEPlaysChronoTrigger",
+  "CONFIG_OS": "windows",
+  "CONFIG_PROGRAM_NAME": "Higan",
+  "CONFIG_MAX_CHAR_NAME": 8,
+  "CONFIG_MAX_CHAR_COMMAND": 20,
+  "CONFIG_SEND_KEY": true,
+  "CONFIG_FILTERED_COMMANDS": [],
+  "CONFIG_THROTTLED_COMMANDS": []
+}
