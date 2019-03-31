@@ -9,11 +9,6 @@ def server():
     return static_file("page.html", root="")
 
 
-@route('/image')
-def image():
-    return static_file("ChronoTrigger.jpg", root="")
-
-
 @route('/keyA')
 def backend_key():
     return Website.BackEnd_key.send_key(json.dumps("A"))
